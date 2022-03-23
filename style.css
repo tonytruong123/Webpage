@@ -47,7 +47,7 @@ h1::before
     animation: animate 6s linear infinite;
 }
 
-@keyframes animatea
+@keyframes animate
 {
     0%
     {
