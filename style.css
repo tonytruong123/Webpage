@@ -1,6 +1,7 @@
 img{
     width: 300px;
     height: 400px;
+    border-radius: 2%;
 }
 
 body{
@@ -10,15 +11,49 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(90deg, #fff 50%, #4a1010 50%);
+    background: linear-gradient(90deg, #eddcd2 50%, #cb997e 50%);
 }
 
 input{
     display: none;
 }
 
+h2{
+    font-size: 2vw;
+    color: #eddcd2;
+    -webkit-text-stroke: 0.0666666666vw #212529;
+    /* text-transform: uppercase; */
+}
+
+h2::before
+{
+    content: attr(data-text);
+    position: absolute;
+    top: 10;
+    left: 10;
+    height: 100%;
+    width: 0;
+    color: #212529;
+    -webkit-text-stroke: 0vw #212529;
+    overflow: hidden;
+    animation: animate 6s linear infinite;
+}
+
+@keyframes animate
+{
+    0%
+    {
+        width: 0;
+    }    
+    70%
+    {
+        width: 100%;
+    } 
+}
+
 .book{
     display: flex;
+    
 }
 
 #cover{
@@ -31,6 +66,7 @@ input{
     height: 400px;
     position: relative;
     perspective: 1500px;
+    
 }
 
 .flip{
@@ -57,10 +93,11 @@ p{
     height: 100%;
     top: 0;
     left: 0;
-    background-color: #fff;
+    background-color: #eddcd2;
     box-sizing: border-box;
     padding: 0 13px;
     box-shadow: inset 20px 0 50px rgba(0,0,0,0.5) 0 2px 5px rgba(0,0,0,0.5);
+    border-radius: 2%;
 }
 
 .back{
