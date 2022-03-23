@@ -4,6 +4,14 @@ img{
     border-radius: 2%;
 }
 
+.daily-app img {
+    width: 15%;
+    height: 15%;
+    border-radius: 20%;
+    margin-left: 5%;
+    margin-top: 10%;
+}
+
 body{
     margin: 100px;
     padding: 0;
@@ -18,14 +26,14 @@ input{
     display: none;
 }
 
-h2{
+h1{
     font-size: 2vw;
     color: #eddcd2;
     -webkit-text-stroke: 0.0666666666vw #212529;
     /* text-transform: uppercase; */
 }
 
-h2::before
+h1::before
 {
     content: attr(data-text);
     position: absolute;
@@ -33,7 +41,7 @@ h2::before
     left: 10;
     height: 100%;
     width: 0;
-    color: #212529;
+    color: #6c757c;
     -webkit-text-stroke: 0vw #212529;
     overflow: hidden;
     animation: animate 6s linear infinite;
@@ -49,6 +57,14 @@ h2::before
     {
         width: 100%;
     } 
+}
+
+h2{
+    font-size: 1.3vw;
+}
+
+ul{
+    font-size: 1.12vw;
 }
 
 .book{
