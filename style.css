@@ -47,7 +47,7 @@ h1::before
     animation: animate 6s linear infinite;
 }
 
-@keyframes animate
+@keyframes animatea
 {
     0%
     {
@@ -99,7 +99,7 @@ ul{
 }
 
 p{
-    font-size: 14px;
+    font-size: 1.5vw;
     line-height: 24px;
 }
 
@@ -133,7 +133,8 @@ p{
     bottom: 13px;
     right: 13px;
     cursor: pointer;
-    color: #000;
+    color: #252422;
+    font-size: 22px;
 }
 
 .back-btn{
@@ -141,7 +142,8 @@ p{
     bottom: 13px;
     right: 13px;
     cursor: pointer;
-    color: #fff; 
+    color: #1d3557; 
+    font-size: 25px;
 }
 
 #p1{
