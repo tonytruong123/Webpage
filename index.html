@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>Essential Information</title>
+</head>
+<body>
+  <div class="book">
+    <input type="checkbox" id ="c1">
+    <input type="checkbox" id ="c2">
+    <input type="checkbox" id ="c3">
+    <div id="cover"><img src="https://vivabooksindia.files.wordpress.com/2018/05/effective-communication-pic-1.jpg"></div>
+    <div class="flip-book">
+      <div class="flip" id="p1">
+        <div class="back">
+          <img src="https://www.quill.com/blog/app/uploads/daily-work-kanban-board.png.webp">
+          <label class = "back-btn" for ="c1">Back</label>
+        </div>
+        <div class="front">
+          <h2>Communication</h2>
+          <p>Basecamp</p>
+          <p>Slack</p>
+          <p>Email</p>
+          <label class="next-btn" for = "c1">Next</label>
+        </div>
+      </div>
+
+      <div class="flip" id="p2">
+        <div class="back">
+          <img src="https://images.ctfassets.net/lzny33ho1g45/four-day-work-week-p-img/4a9ae59e314e90f82e7e9a04fe6f195b/file.png?w=1520&fm=jpg&q=30&fit=thumb&h=760">
+          <label class = "back-btn" for ="c2">Back</label>
+        </div>
+        <div class="front">
+          <h2>Daily Work</h2>
+            <p>1/ Clean</p>
+            <p>2/ Tag @channel</p>
+            <p>3/ Answer message</p>
+            <p>4/ Comment on your Daily Plan</p>
+          <label class="next-btn" for = "c2">Next</label>
+        </div>
+      </div>
+
+      <div class="flip" id="p3">
+        <div class="back">
+          <label class = "back-btn" for ="c3">Back</label>
+        </div>
+        <div class="front">
+          <h2>Shift</h2>
+            <p>1/ Must be requested 1 week in advance:</p>
+            <p>2/ Must be requested at any time:</p>
+            <p>3/ Requests that will not be approved:</p>
+
+          <label class="next-btn" for = "c3">Next</label>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</body>
+</html>
